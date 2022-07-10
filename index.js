@@ -1,5 +1,7 @@
 const express=require('express')
 const app=express()
+
+
 const simpleLogger=(req,res,next)=>{
     console.log(`${req.url}-${req.method}-${new Date().toISOString()}`)
   
